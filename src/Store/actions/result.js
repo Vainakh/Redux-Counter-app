@@ -7,9 +7,11 @@ export const saveResult = (result) => {
   }
 }
 
-export const storeResult = (result) => {
+export const storeResult = (result, getState) => {
   return dispatch => {
     setTimeout(() => {
+      // const oldCounter = getState().ctr.counter;
+      // console.log(oldCounter);
       dispatch(saveResult(result));
     } ,2000)
   };
