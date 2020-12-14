@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 // import { increment, decrement , add5, substruct5, storeResult, deleteResult } from '../../Store/actions/actions';
 import CounterControl from '../../components/CounterControl/CounterControl';
 import CounterOutput from '../../components/CounterOutput/CounterOutput';
-import * as actionCreators from '../../Store/actions/actions';
+import * as actionCreators from '../../Store/actions/index';
 
 class Counter extends Component {
     state = {
